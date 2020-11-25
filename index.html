@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Rock Paper Scissors</title>
+</head>
+<body>
+
+    <section id="hello">
+        <h1>Rock Paper Scissors</h1>
+        <p>The winner is first to 5 points</p>
+    </section >
+    <section id="game">
+        <div>
+            <div>User</div>
+            <div>Score</div>
+            <div>Computer</div>
+        </div>
+        <div>
+            <img src="pngwing.com.png" alt="u">
+            <p  id="s_user">0</p></div>
+        <div>
+            <p id="s_com">0</p>
+            <img src="pngwing.com  (3).png" alt="c">
+        </div>
+        
+        <div id="User" onclick="playRound()">
+            <button onClick="btn_click(this.id)"id="Rock" value="Rock">Rock</button>
+            <button onClick="btn_click(this.id)"id="Paper" value="Paper">Paper</button>
+            <button onClick="btn_click(this.id)"id="Scissors" value="Scissors">Scissors</button>
+        </div>
+        <div id="Computer">
+            <button value="1" disabled>Rock</button>
+            <button value="2" disabled>Paper</button>
+            <button value="3" disabled>Scissors</button>
+        </div>
+        
+    </section>
+    <section id="result">
+        <div id="again" onclick="playAgain()">
+            <button id="new">New game</button>
+        </div>
+        
+        <div id="shose-u" ></div>
+
+        <div id="final_result">
+        </div>
+
+    </section>
+
+
+    <script src="index.js"></script>
+</body>
+</html>
